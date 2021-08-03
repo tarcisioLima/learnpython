@@ -68,34 +68,6 @@ print(type(objeto_tupla)) # class 'tuple'
 vogais = ('a', 'e', 'i', 'o', 'u')
 print(vogais[1]) # e
 
-# Dicionários em python são como em javascript: { chave: 'valor' }
-
-dados_cliente = {
-    'Nome': 'Renan',
-    'Endereco': 'Rua Cruzeiro do Sul',
-    'Telefone': '982503645'
-}
-
-print(dados_cliente['Nome']) # Renan
-print(dados_cliente)
-
-# Nas listas e tuplas acessamos os dados por meio dos índices. 
-# Já nos dicionários, o acesso aos dados é feito por meio da chave associada a eles.
-
-# Exemple adição nova chave
-dados_cliente['Idade'] = 40
-
-print(dados_cliente)
-
-# Para remover um item do dicionário, podemos usar o método pop(), como vemos
-dados_cliente.pop('Telefone', None)
-print(dados_cliente)
-
-# ou 
-del dados_cliente['Idade']
-
-print(dados_cliente)
-
 # Funções para coleções: min() max(), sum(), len()
 numeros = [15, 5, 0, 20, 10]
 nomes = ['Caio', 'Alex', 'Renata', 'Patrícia', 'Bruno']

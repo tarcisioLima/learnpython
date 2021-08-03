@@ -13,6 +13,6 @@ birth_date = 2021 - int(age)
 print(f"{name} was born in {birth_date}")
 
 n1 = int(input('Type a number: '))
-n2 = int(input('Type other numer: '))
+n2 = int(input('Type other number: '))
 
 print(n1+n2)
