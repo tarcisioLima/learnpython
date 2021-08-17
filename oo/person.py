@@ -1,7 +1,13 @@
 from datetime import datetime
+from random import randint
 
 class Person:
+    # Atributo da classe
     current_year = int(datetime.strftime(datetime.now(), '%Y'))
+
+    # __ini__ e def (metodos) são métodos da instância, por isso se passa o self.
+    # existe também class method que se refere a classe, não a instancia em si.
+    # Deve usar o decorator @classmethod, daí acessamos como se fosse um método estatico, sem precisa instanciar.
 
     def __init__(self, name, age, eating=False, speaking=False):
         self.name = name
@@ -45,3 +51,17 @@ class Person:
 
     def get_birth_year(self):
         return self.current_year - self.age
+
+    # Um método que fabrica objetos
+    @classmethod
+    def by_birth_date(cls, name, birth_date):
+        age = cls.current_year - birth_date
+        return cls(name, age)
+
+    # Static method @staticmethod (não nada da classe nem da instancia)
+    @staticmethod
+    def generate_id():
+        rand = randint(10000, 19999)
+        return rand
+
+
