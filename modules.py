@@ -32,7 +32,7 @@ for i in range(10):
 import calcs
 
 '''
- O __name__ do arquivo que está sendo chamado sempre é "main".
+ O __name__ do arquivo que está sendo chamado sempre é "main.py".
 '''
 print('modules: ', __name__)
 print('PI: ', calcs.PI)
